@@ -29,7 +29,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * 1. Creating a new Category
          * This Category will use the following ItemStack
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&Addons Category", "", "&a> Click to open");
+        ItemStack itemGroupItem = new CustomItemStack(Material.BLAZE_ROD, "&Gearfun", "", "&a> Click to open");
 
         // Give your Category a unique id.
         NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
@@ -40,7 +40,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("OP_SWORD", Material.IRON_SWORD, "&4OP sword", "&c+20% Coolness");
+        SlimefunItemStack blaze_sword = new SlimefunItemStack("Blaze sword", Material.BLAZE_ROD, "&4Blaze sword", "A sword forged in the pits of hell");
 
         /*
          * 3. Creating a Recipe
@@ -49,7 +49,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * The machine in which this recipe is crafted in is specified
          * further down as the RecipeType.
          */
-        ItemStack[] recipe = { 
+        ItemStack[] blaze_sword_recipe = { 
         		null, 								SlimefunItems.REINFORCED_ALLOY_INGOT,  null,
         		null, 								SlimefunItems.REINFORCED_ALLOY_INGOT,  null,
         		null, 								null, 							  null };
@@ -61,8 +61,8 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
          */
-        SlimefunItem item = new SlimefunItem(itemGroup, slimefunItem, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
-        item.register(this);
+        SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, RecipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
+        blaze_sword_item.register(this);
     }
 
     @Override
