@@ -32,7 +32,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
         ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&Addons Category", "", "&a> Click to open");
 
         // Give your Category a unique id.
-        NamespacedKey itemGroupId = new NamespacedKey(this, "op gear");
+        NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
         ItemGroup itemGroup = new ItemGroup(itemGroupId, itemGroupItem);
 
         /*
