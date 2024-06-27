@@ -21,8 +21,8 @@ public class BlazingForge extends MultiBlockMachine {
 	public BlazingForge(ItemGroup category, SlimefunItemStack item) {
 		super(category, item, new ItemStack[] {
 				null, null, null,
-				null, null, null,
-				null, new ItemStack(Material.GOLD_BLOCK), null
+				null, new ItemStack(Material.GOLD_BLOCK), null,
+				null, new ItemStack(Material.DISPENSER), null
 				}, BlockFace.DOWN);
 	}
 	
@@ -30,5 +30,4 @@ public class BlazingForge extends MultiBlockMachine {
 	public void onInteract(Player p, Block b) {
 		
 	}
-	
 }
