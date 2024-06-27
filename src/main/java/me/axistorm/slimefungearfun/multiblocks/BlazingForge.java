@@ -26,6 +26,14 @@ import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
 
 public class BlazingForge extends MultiBlockMachine {
 	
+	
+    // Define the blazing_forge_item ItemStack
+    private static final ItemStack blazing_forge_item = new ItemStack(Material.BLAZE_ROD); // Adjust the item type as needed
+    
+    // Create the custom RecipeType using the ItemStack
+    public static final RecipeType RECIPE_TYPE = new RecipeType(blazing_forge_item, "Blazing forge");
+    
+	
 	public BlazingForge(ItemGroup category, SlimefunItemStack item) {
 		super(category, item, new ItemStack[] {
 				null, null, null,
