@@ -40,6 +40,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
+        SlimefunItemStack blazed_ingot = new SlimefunItemStack("Blazed ingot", Material.GOLD_INGOT, "Blazed ingot", "An ingot forged in the pits of hell");
         SlimefunItemStack blaze_sword = new SlimefunItemStack("Blaze sword", Material.BLAZE_ROD, "&4Blaze sword", "A sword forged in the pits of hell");
 
         /*
@@ -49,6 +50,8 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * The machine in which this recipe is crafted in is specified
          * further down as the RecipeType.
          */
+        ItemStack[] blazed_ingot_recipe = {null, null, null, null, null, null, null, null, null};
+        
         ItemStack[] blaze_sword_recipe = { 
         		null, 								SlimefunItems.REINFORCED_ALLOY_INGOT,  null,
         		null, 								SlimefunItems.REINFORCED_ALLOY_INGOT,  null,
@@ -61,6 +64,9 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
          */
+        SlimefunItem blazed_ingot_item = new SlimefunItem(itemGroup, blazed_ingot, recipeType.SMELTERY, blazed_ingot_recipe);
+        blazed_ingot_item.register(this);
+        
         SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, RecipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
         blaze_sword_item.register(this);
     }
