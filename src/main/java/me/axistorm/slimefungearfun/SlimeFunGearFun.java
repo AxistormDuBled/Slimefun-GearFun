@@ -64,10 +64,10 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
          */
-        SlimefunItem blazed_ingot_item = new SlimefunItem(itemGroup, blazed_ingot, recipeType.SMELTERY, blazed_ingot_recipe);
+        SlimefunItem blazed_ingot_item = new SlimefunItem(itemGroup, blazed_ingot, RecipeType.SMELTERY, blazed_ingot_recipe);
         blazed_ingot_item.register(this);
         
-        SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, recipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
+        SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, RecipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
         blaze_sword_item.register(this);
     }
 
