@@ -22,7 +22,7 @@ public class BlazingForge extends MultiBlockMachine {
 		super(category, item, new ItemStack[] {
 				null, null, null,
 				null, null, null,
-				null, null, null
+				null, new ItemStack(Material.GOLD_BLOCK), null
 				}, BlockFace.DOWN);
 	}
 	

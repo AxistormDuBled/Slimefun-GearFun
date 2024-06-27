@@ -14,6 +14,7 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import me.axistorm.slimefungearfun.items.blazed_ingot;
+import me.axistorm.slimefungearfun.multiblocks.BlazingForge;
 
 public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
 
@@ -42,6 +43,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * that you give each item a unique id.
          */
         SlimefunItemStack blazed_ingot = new SlimefunItemStack("BLAZED INGOT", Material.GOLD_INGOT, "&6Blazed ingot", "An ingot forged in the pits of hell");
+        SlimefunItemStack blazing_forge = new SlimefunItemStack("BLAZING FORGE", Material.GOLD_BLOCK, "&6Blazing forge", "An advanced forge");
         SlimefunItemStack blaze_sword = new SlimefunItemStack("BLAZE SWORD", Material.BLAZE_ROD, "&4Blaze sword", "A sword forged in the pits of hell");
 
         /*
@@ -67,6 +69,9 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          */
         blazed_ingot blazed_ingot_item = new blazed_ingot(itemGroup, blazed_ingot, RecipeType.SMELTERY, blazed_ingot_recipe);
         blazed_ingot_item.register(this);
+        
+        BlazingForge blazing_forge_machine = new BlazingForge(itemGroup, blazing_forge);
+        blazing_forge_machine.register(this);
         
         SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, RecipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
         blaze_sword_item.register(this);
