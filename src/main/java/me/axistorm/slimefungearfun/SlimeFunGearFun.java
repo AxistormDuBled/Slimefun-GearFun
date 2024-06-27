@@ -40,8 +40,8 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack blazed_ingot = new SlimefunItemStack("Blazed ingot", Material.GOLD_INGOT, "Blazed ingot", "An ingot forged in the pits of hell");
-        SlimefunItemStack blaze_sword = new SlimefunItemStack("Blaze sword", Material.BLAZE_ROD, "&4Blaze sword", "A sword forged in the pits of hell");
+        SlimefunItemStack blazed_ingot = new SlimefunItemStack("BLAZED INGOT", Material.GOLD_INGOT, "Blazed ingot", "An ingot forged in the pits of hell");
+        SlimefunItemStack blaze_sword = new SlimefunItemStack("BLAZE SWORD", Material.BLAZE_ROD, "&4Blaze sword", "A sword forged in the pits of hell");
 
         /*
          * 3. Creating a Recipe
