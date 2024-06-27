@@ -13,6 +13,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import me.axistorm.slimefungearfun.items.blazed_ingot;
 
 public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
 
@@ -50,7 +51,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * The machine in which this recipe is crafted in is specified
          * further down as the RecipeType.
          */
-        ItemStack[] blazed_ingot_recipe = {null, null, null, null, null, null, null, null, null};
+        ItemStack[] blazed_ingot_recipe = {null, null, null, null, new ItemStack(Material.BLAZE_ROD), null, null, null, null};
         
         ItemStack[] blaze_sword_recipe = { 
         		null, 								SlimefunItems.REINFORCED_ALLOY_INGOT,  null,
@@ -64,7 +65,7 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
          * which this item is crafted in.
          * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
          */
-        SlimefunItem blazed_ingot_item = new SlimefunItem(itemGroup, blazed_ingot, RecipeType.SMELTERY, blazed_ingot_recipe);
+        blazed_ingot blazed_ingot_item = new blazed_ingot(itemGroup, blazed_ingot, RecipeType.SMELTERY, blazed_ingot_recipe);
         blazed_ingot_item.register(this);
         
         SlimefunItem blaze_sword_item = new SlimefunItem(itemGroup, blaze_sword, RecipeType.ENHANCED_CRAFTING_TABLE, blaze_sword_recipe);
@@ -92,3 +93,6 @@ public class SlimeFunGearFun extends JavaPlugin implements SlimefunAddon {
     }
 
 }
+
+
+
