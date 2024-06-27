@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package me.axistorm.slimefungearfun.items;
 
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
@@ -23,6 +22,3 @@ public class blazed_ingot extends SlimefunItem {
 		super(itemGroup, item, recipeType, recipe);
 	}
 }
-=======
-
->>>>>>> origin/master

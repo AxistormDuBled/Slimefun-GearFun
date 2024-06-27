@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package me.axistorm.slimefungearfun.multiblocks;
 
 import io.github.thebusybiscuit.slimefun4.core.multiblocks.MultiBlockMachine;
@@ -33,6 +32,3 @@ public class BlazingForge extends MultiBlockMachine {
 	}
 	
 }
-=======
-
->>>>>>> origin/master
