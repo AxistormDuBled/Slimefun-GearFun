@@ -39,7 +39,8 @@ public class BlazingForge extends MultiBlockMachine {
 		Block possibleDispenser = b.getRelative(BlockFace.DOWN);
 		BlockState state = possibleDispenser.getState();
 		
-		if (state instanceof Dispenser dispenser) {
+		if (state instanceof Dispenser) {
+			Dispenser dispenser = (Dispenser) state;
 			Inventory inv = dispenser.getInventory();
 			List<ItemStack[]> inputs = RecipeType.getRecipeInputList(this);
 		
